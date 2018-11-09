@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>business website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		var x=0,y=0;
+		function show(){
+			var str="Welcome To My Site! I'm Bhavdeep Singh";
+			var l=str.length;
+			if(x<=l){
+				document.getElementById('message').innerHTML+=str.charAt(x);
+				x++;
+				setTimeout("show()",200);
+			}
+		}
+	</script>
+</head>
+<body onload="show()">
+<header>
+	<div class="row">
+		<ul class="main-nav">
+			<li class="active"><a href="">HOME</a></li>
+			<li><a href="">ABOUT</a></li>
+			<li><a href="">SERVICES</a></li>
+			<li><a href="">CONTACT</a></li>
+			<li><a href="">NEWS</a></li>
+			<li><a href="">FAQ</a></li>
+	</div>
+	<div class="hero">
+		<p id="message"></p>
+	</div>
+</header>
+<div class="container">
+	<div class="about">
+		<h1>Profile</h1>
+	</div>
+	<div class="main-content">
+		<div class="col-mid">
+			<h3>Education</h3>
+			<h3>Btech</h3>
+			<p>Chandigarh Group of Colleges</p>
+			<h3>+2 Non Medical</h3>
+			<p>Scholar fields public school</p>
+			<h3>10th Standard</h3>
+			<p>Scholar Fields public school</p>
+		</div>
+		<div class="col-mid">
+			<h3>Expertise</h3>
+			<h3>Java Developer</h3>
+			<p>Core Java and Gui application expert</p>
+			<h3>Web Designer</h3>
+			<p>Expert in HTMl,CSS,Javascript and php</p>
+			<h3>Android Developer</h3>
+			<p>Developing Mobile based apps</p>
+		</div>
+		<div class="col-mid">
+			<h3>Achievements</h3>
+			<h3>Coding Ninjas Runnerup</h3>
+			<p>Secured Second Place in Coding Event</p>
+			<h3>Intercollege Debate Winner</h3>
+			<p>Winner in Intercollege Debate Winner</p>
+			<h3>Best Project Display</h3>
+			<p>winner in Project Display Competition</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
